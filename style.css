@@ -11,7 +11,7 @@ nav{display:flex;gap:28px;font-size:13px;font-weight:600;text-transform:uppercas
 nav a:hover{color:var(--aqua)}
 .facebook-btn{border:1px solid rgba(255,255,255,.35);padding:10px 16px;border-radius:99px;font-size:12px;text-transform:uppercase;font-weight:700}
 .menu-btn{display:none;background:none;border:0;color:white;font-size:25px}
-.hero{min-height:100vh;position:relative;display:flex;align-items:center;padding:120px 8vw;color:white;background:linear-gradient(115deg,rgba(4,31,35,.88),rgba(5,54,61,.35)),url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;padding:120px 8vw;color:white;background:linear-gradient(115deg,rgba(4,31,35,.88),rgba(5,54,61,.35)),url('https://scontent.fceb6-4.fna.fbcdn.net/v/t39.30808-6/710710194_1653195123476895_6676055819426637140_n.jpg?stp=dst-jpg_tt6&cstp=mx1546x1536&ctp=s1546x1536&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeENLRCGl4oMx-E5omnCONZwhfyL0eYYjm-F_IvR5hiOb1M482-_-L5E3CJt2HZSfUCQgFqZ9XlNnmwkI4YgASoC&_nc_ohc=S1Tu-qM1ln0Q7kNvwEwxURd&_nc_oc=AdoZMQq1pWcIyHAR_90Rpup5nluaTVG9m2AwIL2PyjCWbEtm5biApb5ICIA8zq_xIso&_nc_zt=23&_nc_ht=scontent.fceb6-4.fna&_nc_gid=JCqy_ni6_MywOsYyy0b0Mw&_nc_ss=7b2a8&oh=00_AQJg-75ywGJ68_y_w70QmUbMtl6_irb_fmmCBoojbMpCJw&oe=6AA99B9D') center/cover}
 .hero-content{max-width:760px;position:relative;z-index:2}
 .eyebrow{font-size:12px;font-weight:800;letter-spacing:3px;color:var(--aqua);margin-bottom:15px}
 h1,h2,h3{font-family:'Barlow Condensed',sans-serif;line-height:.98;text-transform:uppercase}
