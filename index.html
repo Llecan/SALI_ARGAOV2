@@ -3,249 +3,800 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adventure, skimboarding and boardriding shop template for Argao Cebu.">
-  <title>ACBFSABAI | Boardriding & Adventure</title>
+
+  <meta name="description" content="Sali Argao Boardriding and Adventures Inc. — Skimboarding, adventure, community and local gear in Argao, Cebu.">
+
+  <title>ACBFSABAI | Ride The Coast</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#home">ACBFS<span>ABAI</span></a>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#adventure">Adventure</a>
-      <a href="#about">About</a>
-      <a href="#events">Events</a>
-      <a href="#contact">Contact Us</a>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">AR​GAO • CEBU • PHILIPPINES</p>
-        <h1>Sali Argao Boardriding 
-          and <br><span>Adventures Inc.</span></h1>
-        <p class="hero-text">(SABAI) goes beyond the conventional boundaries of a sports and recreation organization. It acts as a driving force for comprehensive community development, promoting, environmental conservation sports, fishermen, tourism, farming, ,art, events,
-</p>
-        <div class="hero-actions">
-          <a class="btn ghost" href="#shop">Explore Shop</a>
-          <a class="btn ghost" href="#adventure">Discover Adventure</a>
-        </div>
-      </div>
-      <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
-    </section>
-    
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+  <a class="brand" href="#home">
+    ACBFS<span>ABAI</span>
+  </a>
+
+  <button class="menu-btn" aria-label="Open menu">
+    ☰
+  </button>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#adventure">Adventure</a>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <p class="eyebrow">
+      ARGAO • CEBU • PHILIPPINES
+    </p>
+
+    <h1>
+      RIDE THE
+      <span>COAST.</span>
+    </h1>
+
+    <p class="hero-text">
+      Sali Argao Boardriding and Adventures Inc. —
+      growing boardriding, adventure, sports and
+      community culture from the shoreline of Argao.
+    </p>
+
+    <div class="hero-actions">
+
+      <a class="btn primary" href="#shop">
+        SHOP GEAR
+      </a>
+
+      <a class="btn ghost" href="#adventure">
+        EXPLORE ADVENTURE
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-bottom">
+
+    <span>ACBFSABAI</span>
+
+    <span>
+      SCROLL TO EXPLORE ↓
+    </span>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SHOP ================= -->
+
 <section id="shop" class="section shop-section">
 
   <div class="section-head shop-heading">
+
     <div>
-      <p class="eyebrow">LOCAL SHOP</p>
-      <h2>Gear up. Ride out.</h2>
-      <p class="shop-subtitle">
-        Everything you need for your next skimboarding adventure.
+
+      <p class="eyebrow">
+        LOCAL SHOP
       </p>
+
+      <h2>
+        Gear up.<br>
+        Ride out.
+      </h2>
+
+      <p class="shop-subtitle">
+        Gear built for beach days, boardriding
+        and your next adventure.
+      </p>
+
     </div>
 
-    <a href="#shop" class="shop-view-btn">VIEW ALL GEAR →</a>
+    <div class="shop-label">
+      04 PRODUCTS
+    </div>
+
   </div>
+
 
   <div class="products">
 
+
     <!-- PRODUCT 1 -->
-    <article class="product-card">
+
+    <article
+      class="product-card"
+      onclick="selectProduct('Classic Ride')"
+    >
+
       <div class="product-image image-one">
-        <span class="product-type">SKIMBOARD</span>
+
+        <span class="product-number">
+          01
+        </span>
+
+        <span class="product-type">
+          SKIMBOARD
+        </span>
+
+        <div class="image-hover">
+          VIEW PRODUCT →
+        </div>
+
       </div>
 
       <div class="product-info">
+
         <div class="product-meta">
-          <p class="tag">BOARD</p>
-          <span class="rating">★★★★★</span>
+
+          <p class="tag">
+            BOARD
+          </p>
+
+          <span class="rating">
+            ★★★★★
+          </span>
+
         </div>
 
-        <h3>Classic Ride</h3>
+        <h3>
+          Classic Ride
+        </h3>
 
         <p>
-          A smooth and beginner-friendly board made for easy rides,
-          beach sessions, and learning new tricks.
+          A smooth and beginner-friendly board
+          made for beach sessions and learning
+          new tricks.
         </p>
 
         <div class="product-bottom">
-          <div>
-            <small>PRICE</small>
-            <strong>₱2,500</strong>
+
+          <div class="price">
+
+            <small>
+              PRICE
+            </small>
+
+            <strong>
+              ₱2,500
+            </strong>
+
           </div>
 
-          <button class="cart-btn" onclick="addToCart('Classic Ride')">
-            ADD TO CART +
+          <button
+            class="cart-btn"
+            onclick="event.stopPropagation(); addToCart('Classic Ride')"
+          >
+            ADD TO CART
+            <span>+</span>
           </button>
+
         </div>
+
       </div>
+
     </article>
 
 
     <!-- PRODUCT 2 -->
-    <article class="product-card">
+
+    <article
+      class="product-card"
+      onclick="selectProduct('Wave Hunter')"
+    >
+
       <div class="product-image image-two">
-        <span class="product-type">SKIMBOARD</span>
+
+        <span class="product-number">
+          02
+        </span>
+
+        <span class="product-type">
+          SKIMBOARD
+        </span>
+
+        <div class="image-hover">
+          VIEW PRODUCT →
+        </div>
+
       </div>
 
       <div class="product-info">
+
         <div class="product-meta">
-          <p class="tag">PERFORMANCE</p>
-          <span class="rating">★★★★★</span>
+
+          <p class="tag">
+            PERFORMANCE
+          </p>
+
+          <span class="rating">
+            ★★★★★
+          </span>
+
         </div>
 
-        <h3>Wave Hunter</h3>
+        <h3>
+          Wave Hunter
+        </h3>
 
         <p>
-          Built for riders who want more speed, control,
-          and confidence on every session.
+          Built for riders who want more speed,
+          control and confidence.
         </p>
 
         <div class="product-bottom">
-          <div>
-            <small>PRICE</small>
-            <strong>₱4,500</strong>
+
+          <div class="price">
+
+            <small>
+              PRICE
+            </small>
+
+            <strong>
+              ₱4,500
+            </strong>
+
           </div>
 
-          <button class="cart-btn" onclick="addToCart('Wave Hunter')">
-            ADD TO CART +
+          <button
+            class="cart-btn"
+            onclick="event.stopPropagation(); addToCart('Wave Hunter')"
+          >
+            ADD TO CART
+            <span>+</span>
           </button>
+
         </div>
+
       </div>
+
     </article>
 
 
     <!-- PRODUCT 3 -->
-    <article class="product-card">
+
+    <article
+      class="product-card"
+      onclick="selectProduct('Boardriding Tee')"
+    >
+
       <div class="product-image image-three">
-        <span class="product-type">APPAREL</span>
+
+        <span class="product-number">
+          03
+        </span>
+
+        <span class="product-type">
+          APPAREL
+        </span>
+
+        <div class="image-hover">
+          VIEW PRODUCT →
+        </div>
+
       </div>
 
       <div class="product-info">
+
         <div class="product-meta">
-          <p class="tag">MERCH</p>
-          <span class="rating">★★★★★</span>
+
+          <p class="tag">
+            MERCH
+          </p>
+
+          <span class="rating">
+            ★★★★★
+          </span>
+
         </div>
 
-        <h3>Boardriding Tee</h3>
+        <h3>
+          Boardriding Tee
+        </h3>
 
         <p>
-          A clean everyday tee inspired by the beach,
-          adventure, and local boardriding culture.
+          A clean everyday tee inspired by
+          the beach and local boardriding culture.
         </p>
 
         <div class="product-bottom">
-          <div>
-            <small>PRICE</small>
-            <strong>₱750</strong>
+
+          <div class="price">
+
+            <small>
+              PRICE
+            </small>
+
+            <strong>
+              ₱750
+            </strong>
+
           </div>
 
-          <button class="cart-btn" onclick="addToCart('Boardriding Tee')">
-            ADD TO CART +
+          <button
+            class="cart-btn"
+            onclick="event.stopPropagation(); addToCart('Boardriding Tee')"
+          >
+            ADD TO CART
+            <span>+</span>
           </button>
+
         </div>
+
       </div>
+
     </article>
 
 
     <!-- PRODUCT 4 -->
-    <article class="product-card">
+
+    <article
+      class="product-card"
+      onclick="selectProduct('Adventure Cap')"
+    >
+
       <div class="product-image image-four">
+
+        <span class="product-number">
+          04
+        </span>
+
+        <span class="product-type">
+          GEAR
+        </span>
+
+        <div class="image-hover">
+          VIEW PRODUCT →
+        </div>
+
       </div>
 
       <div class="product-info">
+
         <div class="product-meta">
-          <p class="tag">GEAR</p>
-          <span class="rating">★★★★★</span>
+
+          <p class="tag">
+            OUTDOOR
+          </p>
+
+          <span class="rating">
+            ★★★★★
+          </span>
+
         </div>
 
-        <h3>Adventure Cap</h3>
+        <h3>
+          Adventure Cap
+        </h3>
 
         <p>
-          A lightweight outdoor cap for sunny beach days
-          and your next adventure.
+          A lightweight outdoor cap for sunny
+          beach days and your next adventure.
         </p>
 
         <div class="product-bottom">
-          <div>
-            <small>PRICE</small>
-            <strong>₱550</strong>
+
+          <div class="price">
+
+            <small>
+              PRICE
+            </small>
+
+            <strong>
+              ₱550
+            </strong>
+
           </div>
 
-          <button class="cart-btn" onclick="addToCart('Adventure Cap')">
-            ADD TO CART +
+          <button
+            class="cart-btn"
+            onclick="event.stopPropagation(); addToCart('Adventure Cap')"
+          >
+            ADD TO CART
+            <span>+</span>
           </button>
+
         </div>
+
       </div>
+
     </article>
 
   </div>
+
 </section>
-    <section id="adventure" class="split-section">
-      <div class="split-image"></div>
-      <div class="split-copy">
-        <p class="eyebrow">MORE THAN A SHOP</p>
-        <h2>Built around the adventure.</h2>
-        <p>Turn this section into your story: introduce your riders, your local boardriding culture, training activities, beach sessions and the experiences you want visitors to discover.</p>
-        <div class="feature-list">
-          <div><b>01</b><span><strong>Skimboarding</strong><br>From first rides to serious competition.</span></div>
-          <div><b>02</b><span><strong>Adventure</strong><br>Beach days, outdoor sessions and new places.</span></div>
-          <div><b>03</b><span><strong>Community</strong><br>Connect riders, supporters and visitors.</span></div>
-        </div>
-      </div>
-    </section>
 
-    <section id="about" class="section dark">
-      <div class="section-head">
-        <div><p class="eyebrow">OUR STORY</p><h2>From the shoreline to the community.</h2></div>
-        <p>Argao has a long connection with skimboarding and boardriding. Use this area for your official organization story, mission and rider community.</p>
-      </div>
-      <div class="stats">
-        <div><strong>01</strong><span>Local Roots</span></div>
-        <div><strong>02</strong><span>Boardriding Culture</span></div>
-        <div><strong>03</strong><span>Adventure Events</span></div>
-        <div><strong>04</strong><span>Community First</span></div>
-      </div>
-    </section>
 
-    <section id="events" class="section">
-      <div class="section-head">
-        <div><p class="eyebrow">UPCOMING</p><h2>Events & Sessions</h2></div>
-        <p>Replace these cards with your real event dates, registration details and announcements.</p>
+<!-- ================= ADVENTURE ================= -->
+
+<section id="adventure" class="split-section">
+
+  <div class="split-image">
+
+    <div class="image-caption">
+      ARGAO / CEBU
+    </div>
+
+  </div>
+
+  <div class="split-copy">
+
+    <p class="eyebrow">
+      MORE THAN A SHOP
+    </p>
+
+    <h2>
+      Built around
+      the adventure.
+    </h2>
+
+    <p>
+      More than boards and gear. ACBFSABAI
+      brings riders, communities and outdoor
+      experiences together.
+    </p>
+
+    <div class="feature-list">
+
+      <div>
+        <b>01</b>
+        <span>
+          <strong>Skimboarding</strong>
+          <br>
+          From first rides to competition.
+        </span>
       </div>
-      <div class="events">
-        <article><span class="event-date">SEP<br><b>19–20</b></span><div><p class="tag">BOARD​RIDING</p><h3>Boardriding Festival</h3><p>Competition, community sessions and beachside action.</p></div></article>
-        <article><span class="event-date">TBA<br><b>2026</b></span><div><p class="tag">ADVENTURE</p><h3>Next Adventure</h3><p>Watch the official page for the next announcement.</p></div></article>
+
+      <div>
+        <b>02</b>
+        <span>
+          <strong>Adventure</strong>
+          <br>
+          Beach days and outdoor sessions.
+        </span>
       </div>
-    </section>
 
-    <section class="cta">
-      <div><p class="eyebrow">FOLLOW THE JOURNEY</p><h2>See the latest action.</h2></div>
-      <a class="btn light" href="https://www.facebook.com/ACBFSABAI" target="_blank" rel="noopener">Visit Facebook Page ↗</a>
-    </section>
-
-    <section id="contact" class="contact">
-      <div><p class="eyebrow">CONTACT</p><h2>Let's ride.</h2><p>For orders, events, partnerships and inquiries, update the contact details below.</p></div>
-      <div class="contact-card">
-        <p><span>Email</span> saliargaoboardridingass@gmail.com </p>
-        <p><span>Location</span> Argao, Cebu, Philippines</p>
-        <p><span>Number</span> 0927 086 5878</p>
-        <a class="btn primary full" href="https://www.facebook.com/ACBFSABAI" target="_blank" rel="noopener">Message Us on Facebook</a>
+      <div>
+        <b>03</b>
+        <span>
+          <strong>Community</strong>
+          <br>
+          Connecting riders and supporters.
+        </span>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="brand">ACBFS<span>ABAI</span></div>
-    <p>Adventure • Skimboarding • Boardriding</p>
-    <p>© <span id="year"></span> ACBFSABAI. All rights reserved.</p>
-  </footer>
+    </div>
 
-  <div id="toast" class="toast">Added to cart</div>
-  <script src="script.js"></script>
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section dark">
+
+  <div class="section-head">
+
+    <div>
+
+      <p class="eyebrow">
+        OUR STORY
+      </p>
+
+      <h2>
+        From the shoreline
+        to the community.
+      </h2>
+
+    </div>
+
+    <p>
+      Argao has a strong connection with
+      skimboarding and boardriding. This is
+      where sport, adventure and community
+      come together.
+    </p>
+
+  </div>
+
+
+  <div class="stats">
+
+    <div>
+      <strong>
+        01
+      </strong>
+      <span>
+        Local Roots
+      </span>
+    </div>
+
+    <div>
+      <strong>
+        02
+      </strong>
+      <span>
+        Boardriding Culture
+      </span>
+    </div>
+
+    <div>
+      <strong>
+        03
+      </strong>
+      <span>
+        Adventure Events
+      </span>
+    </div>
+
+    <div>
+      <strong>
+        04
+      </strong>
+      <span>
+        Community First
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section id="events" class="section">
+
+  <div class="section-head">
+
+    <div>
+
+      <p class="eyebrow">
+        UPCOMING
+      </p>
+
+      <h2>
+        Events & Sessions
+      </h2>
+
+    </div>
+
+    <p>
+      Stay connected with boardriding events,
+      community sessions and adventures.
+    </p>
+
+  </div>
+
+
+  <div class="events">
+
+    <article>
+
+      <span class="event-date">
+        SEP
+        <br>
+        <b>19–20</b>
+      </span>
+
+      <div>
+
+        <p class="tag">
+          BOARDRIDING
+        </p>
+
+        <h3>
+          Boardriding Festival
+        </h3>
+
+        <p>
+          Competition, community sessions
+          and beachside action.
+        </p>
+
+      </div>
+
+      <span class="event-arrow">
+        ↗
+      </span>
+
+    </article>
+
+
+    <article>
+
+      <span class="event-date">
+        TBA
+        <br>
+        <b>2026</b>
+      </span>
+
+      <div>
+
+        <p class="tag">
+          ADVENTURE
+        </p>
+
+        <h3>
+          Next Adventure
+        </h3>
+
+        <p>
+          Watch the official page for
+          the next announcement.
+        </p>
+
+      </div>
+
+      <span class="event-arrow">
+        ↗
+      </span>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+  <div>
+
+    <p class="eyebrow">
+      FOLLOW THE JOURNEY
+    </p>
+
+    <h2>
+      See the latest action.
+    </h2>
+
+  </div>
+
+  <a
+    class="btn light"
+    href="https://www.facebook.com/ACBFSABAI"
+    target="_blank"
+    rel="noopener"
+  >
+    VISIT FACEBOOK ↗
+  </a>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+  <div>
+
+    <p class="eyebrow">
+      CONTACT
+    </p>
+
+    <h2>
+      Let's ride.
+    </h2>
+
+    <p>
+      Interested in a product, event,
+      partnership or adventure?
+      Send us a message.
+    </p>
+
+  </div>
+
+
+  <div class="contact-card">
+
+    <div class="contact-top">
+
+      <span>
+        READY TO RIDE?
+      </span>
+
+      <span>
+        ACBFSABAI
+      </span>
+
+    </div>
+
+
+    <p>
+      <span>Email</span>
+      saliargaoboardridingass@gmail.com
+    </p>
+
+    <p>
+      <span>Location</span>
+      Argao, Cebu, Philippines
+    </p>
+
+    <p>
+      <span>Number</span>
+      0927 086 5878
+    </p>
+
+
+    <div id="selected-product" class="selected-product">
+      Product inquiry will appear here.
+    </div>
+
+
+    <a
+      id="facebook-message"
+      class="btn primary full"
+      href="https://www.facebook.com/ACBFSABAI"
+      target="_blank"
+      rel="noopener"
+    >
+      MESSAGE US ON FACEBOOK ↗
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="brand">
+    ACBFS<span>ABAI</span>
+  </div>
+
+  <p>
+    Adventure • Skimboarding • Boardriding
+  </p>
+
+  <p>
+    © <span id="year"></span>
+    ACBFSABAI. All rights reserved.
+  </p>
+
+</footer>
+
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast" class="toast">
+  Product selected
+</div>
+
+
+<!-- ================= SCRIPT ================= -->
+
+<script src="script.js"></script>
+
 </body>
 </html>
